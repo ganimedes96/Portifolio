@@ -6,49 +6,53 @@ import {
     RiDiscordFill,
     RiGitBranchLine
   } from "react-icons/ri";
-
+  import cat from '../animations/cat.json'
+  import Lottie from 'react-lottie';
 
 export const Footer = () =>{
+    
+    const catAnimation= {
+        loop: true,
+        autoplay: true,
+        animationData: cat,
+        rendererSettings:{
+            preserveAspectRatio: 'xMidYMid slice'
+        }
+    }
+
     return(
         <Flex 
             as='footer'
-            h='10rem'
+            h='3.5rem'
             bg='blue.800'
             d='flex'
             w='100%'
-            alignItems='center'
-            justifyContent='space-between'
-            px='3rem'
+            align='center'
+            justify='center'
+            gap='1rem'
+            
+            
             
         >
-            <Box>
-                <Text 
+            
+              <Box>
+              <Text 
                     as='h2'
-                    fontSize='30px'
-                    fontWeight='600'
+                    fontSize='20px'
+                    fontWeight='500'
                     color='gray.300'
                     
                 >Hudson Felix</Text>
-                <Text as='p' color='gray.400'>Developer Front-End</Text>
-            </Box>
-            <Flex
-                    align='center'
-                    gap='2rem'
-
-            >
-                <Icon
-                    as={RiWhatsappFill}
-                    fontSize='28px'
-                />
-                <Icon
-                    as={RiDiscordFill}
-                    fontSize='28px'
-                />
-                <Icon
-                    as={RiGithubFill}
-                    fontSize='28px'
-                />
-            </Flex>    
+              </Box>
+               
+           <Box mb='.3rem'>
+           <Lottie
+                  options={catAnimation}
+                  height='55px'
+                  width='55px'
+              />
+            
+           </Box>
             
 
         </Flex>

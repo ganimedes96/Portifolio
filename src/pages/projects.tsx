@@ -71,8 +71,9 @@ export default function Projects ({projects}: projectsProps){
         <Flex 
         as='main'
         flex='1'
-        mb='10'
+        mb='10rem'
         justify='center' 
+
         >
             <Flex 
              maxW='1200px'

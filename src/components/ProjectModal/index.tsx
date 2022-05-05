@@ -63,6 +63,7 @@ import {
                     <ModalBody>
                         <Flex
                            id="modal-content"
+                          
                         >
                             {images.length > 0 || videos.length > 0 ?(
                                 <Swiper

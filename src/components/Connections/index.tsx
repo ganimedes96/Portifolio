@@ -69,6 +69,7 @@ export const Connections = () => {
           <Text
             d="flex"
             as="a"
+            cursor="pointer"
             bg="blue.400"
             justifyContent="center"
             alignItems="center"
@@ -78,6 +79,7 @@ export const Connections = () => {
             Download CV
           </Text>
           <Button
+           
             onClick={onOpen}
             bg="transparent"
             border=" 2px  solid"
@@ -115,13 +117,14 @@ export const Connections = () => {
               <ModalCloseButton top="30px" right="30px" />
               <ModalBody mt="10" p="0" w="100%">
                 <Stack>
-                 <Link href='https://www.linkedin.com/in/hudson-felix-577305215/' passHref>
+                
 
                   <Button
                     as="a"
                     target="_blank"
                     bg="blue.400"
                     w="100%"
+                    href='https://www.linkedin.com/in/hudson-felix-577305215/'
                     justifyContent="flex-start"
                     leftIcon={
                       <Icon
@@ -136,45 +139,51 @@ export const Connections = () => {
                   >
                     LinkedIn
                   </Button>
-                 </Link>
-                  <Button
-                    as="a"
-                    target="_blank"
-                    bg="blue.400"
-                    w="100%"
-                    justifyContent="flex-start"
-                    leftIcon={
-                      <Icon
-                        as={RiGithubFill}
-                        boxSize="20px"
-                        marginRight="20px"
-                      />
-                    }
-                    _hover={{
-                      bg: "blue.900",
-                    }}
-                  >
-                    Github
-                  </Button>
-                  <Button
-                    as="a"
-                    target="_blank"
-                    bg="blue.400"
-                    w="100%"
-                    justifyContent="flex-start"
-                    leftIcon={
-                      <Icon
-                        as={RiWhatsappFill}
-                        boxSize="20px"
-                        marginRight="20px"
-                      />
-                    }
-                    _hover={{
-                      bg: "blue.900",
-                    }}
-                  >
-                    WhatsApp
-                  </Button>
+                 
+                 
+                    <Button
+                      as="a"
+                      target="_blank"
+                      bg="blue.400"
+                      w="100%"
+                      href="https://github.com/ganimedes96"
+                      justifyContent="flex-start"
+                      leftIcon={
+                        <Icon
+                          as={RiGithubFill}
+                          boxSize="20px"
+                          marginRight="20px"
+                        />
+                      }
+                      _hover={{
+                        bg: "blue.900",
+                      }}
+                    >
+                      Github
+                    </Button>
+                
+                 
+                    <Button
+                      as="a"
+                      target="_blank"
+                      bg="blue.400"
+                      w="100%"
+                      href='https://web.whatsapp.com/send?phone="5586981188385"'
+                      justifyContent="flex-start"
+                      leftIcon={
+                        <Icon
+                          as={RiWhatsappFill}
+                          boxSize="20px"
+                          marginRight="20px"
+                        />
+                      }
+                      _hover={{
+                        bg: "blue.900",
+                      }}
+                    >
+                      WhatsApp
+                    </Button>
+                 
                   <Button
                     as="a"
                     target="_blank"
