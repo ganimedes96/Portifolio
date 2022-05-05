@@ -19,7 +19,7 @@ export default function About () {
             as='main'
             maxW='1300'
             mx='auto'
-            p={{base:'5rem 2rem', md:'8rem 5rem'}}
+            p={{base:'5rem 2rem', md:'10rem 5rem'}}
 
             >
                 <Text 

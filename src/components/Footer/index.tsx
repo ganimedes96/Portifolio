@@ -31,8 +31,6 @@ export const Footer = () =>{
             justify='center'
             gap='1rem'
             
-            
-            
         >
             
               <Box>
@@ -42,7 +40,7 @@ export const Footer = () =>{
                     fontWeight='500'
                     color='gray.300'
                     
-                >Hudson Felix</Text>
+                >Made by Hudson Felix</Text>
               </Box>
                
            <Box mb='.3rem'>
