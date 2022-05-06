@@ -6,7 +6,7 @@ import {
     RiLinkedinBoxFill,
     RiDiscordFill,
   } from "react-icons/ri";
-
+import Link from 'next/link'
 
 export default function About () {
 
@@ -68,110 +68,108 @@ export default function About () {
                     flexDirection={{base:'column', md:'row'}}
 
                 >
-                    <Button
-                        w ={{base:'80%',md:'20%'}}
-                        backgroundColor='transparent'
-                        color='gray.300'
-                        border='1px solid'
-                        borderColor='blue.400'
-                        p='.7rem 1.3rem'
-                        _hover={{ bg: "transparent" }}
-                        _active={{
-                          transform: "scale( 1.05)",
-                          borderColor: "blue.400",
-                        }}
-                        _focus={{
-                          boxShadow: "0 0 1px 2px blue.400, 0 1px 1px rgba(0, 0, 0, .15)",
-                        }}
-                        leftIcon={
-                          <Icon
-                            as={RiLinkedinBoxFill}
-                            boxSize="25px"
-                            color="blue.500"
-                          
-                          />
-                        }
-                    >
-                        Linkedin    
-                    </Button>
-                    <Button
+                 
+                      <Text as='a'
+                          w ={{base:'80%',md:'20%'}}
+                          backgroundColor='transparent'
+                          textAlign='center'
+                          color='gray.300'
+                          href='https://www.linkedin.com/in/hudson-felix-577305215/'
+                          target='_blank'
+                          border='2px solid'
+                          borderColor='blue.400'
+                          p='.5rem 1.3rem'
+                          display='flex'
+                          alignItems='center'
+                          justifyContent='center'
+                          gap='.5rem'
+                          borderRadius='5px'
+                      >
+                        <Icon
+                              as={RiLinkedinBoxFill}
+                              boxSize="25px"
+                              color="blue.500"
+                            
+                            />
+                          Linkedin    
+                      </Text>
+                 
+                    <Text
+                      as='a'
                        w ={{base:'80%',md:'20%'}}
                         backgroundColor='transparent'
                         color='gray.300'
-                        border='1px solid'
+                        border='2px solid'
                         borderColor='green.400'
-                        p='.7rem 1.3rem'
-                        _hover={{ bg: "transparent" }}
-                        _active={{
-                          transform: "scale( 1.05)",
-                          borderColor: "green.400",
-                        }}
-                        _focus={{
-                          boxShadow: "0 0 1px 2px blue.400, 0 1px 1px rgba(0, 0, 0, .15)",
-                        }}
-                        leftIcon={
-                          <Icon
+                        href='https://github.com/ganimedes96'
+                        target='_blank'
+                        p='.5rem 1.3rem'
+                          display='flex'
+                          alignItems='center'
+                          justifyContent='center'
+                          gap='.5rem'
+                          borderRadius='5px'
+                       
+                    >
+                      <Icon
                             as={RiGithubFill}
                             boxSize="25px"
                             color="green.500"
                           
                           />
-                        }
-                    >
                         GitHub
-                    </Button>
-                    <Button
-                    w ={{base:'80%',md:'20%'}}
+                    </Text>
+                    <Text
+                        as='a'
+                        w ={{base:'80%',md:'20%'}}
                         backgroundColor='transparent'
                         color='gray.300'
-                        border='1px solid'
+                        border='2px solid'
                         borderColor='red.400'
-                        p='.7rem 1.3rem'
-                        _hover={{ bg: "transparent" }}
-                        _active={{
-                          transform: "scale( 1.05)",
-                          borderColor: "green.400",
-                        }}
-                        _focus={{
-                          boxShadow: "0 0 1px 2px blue.400, 0 1px 1px rgba(0, 0, 0, .15)",
-                        }}
-                        leftIcon={
-                          <Icon
-                            as={RiMailSendLine}
-                            boxSize="25px"
-                            color="red.500"
-                          
-                          />
-                        }
+                        href='mailto:hudsonfelix69@gmail.com?subject=subject text'
+                        target='_blank'
+                        p='.5rem 1.3rem'
+                          display='flex'
+                          alignItems='center'
+                          justifyContent='center'
+                          gap='.5rem'
+                          borderRadius='5px'
+                       
                     >
-                        E-mail
-                    </Button>
-                    <Button
-                    w ={{base:'80%',md:'20%'}}
+                        <Icon
+                          as={RiMailSendLine}
+                          boxSize="25px"
+                          color="red.500"
+                        
+                        />
+                        Email
+                    </Text>
+                    <Text
+                        as='a'
+                        w ={{base:'80%',md:'20%'}}
                         backgroundColor='transparent'
                         color='gray.300'
-                        border='1px solid'
+                        border='2px solid'
                         borderColor='purple.400'
-                        p='.7rem 1.3rem'
-                        _hover={{ bg: "transparent" }}
-                        _active={{
-                          transform: "scale( 1.05)",
-                          borderColor: "purple.400",
-                        }}
-                        _focus={{
-                          boxShadow: "0 0 1px 2px blue.400, 0 1px 1px rgba(0, 0, 0, .15)",
-                        }}
-                        leftIcon={
+                        href=''
+                          target='_blank'
+                        p='.5rem 1.3rem'
+                          display='flex'
+                          alignItems='center'
+                          justifyContent='center'
+                          gap='.5rem'
+                          borderRadius='5px'
+                        
+                        
+                    >
                           <Icon
                             as={RiDiscordFill}
                             boxSize="25px"
                             color="purple.500"
                           
                           />
-                        }
-                    >
                         Discord
-                    </Button>
+                    </Text>
                 </Flex>
 
         </Box>
