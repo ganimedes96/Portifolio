@@ -18,7 +18,8 @@ const repositories= {
         'TYPING',
         'Great-Code',
         'Dashgo',
-        'Ig_news'
+        'Ig_news',
+        'PH-Store'
 
     ]
 }
