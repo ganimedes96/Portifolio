@@ -71,6 +71,8 @@ export const Connections = () => {
             as="a"
             cursor="pointer"
             bg="blue.400"
+            href='https://drive.google.com/file/d/1RxuFqs1g66vALosKePhI1jI_1ZCaLCeP/view?usp=sharing'
+            target='_blank'
             justifyContent="center"
             alignItems="center"
             p=".5rem 1rem"
