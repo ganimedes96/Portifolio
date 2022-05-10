@@ -53,7 +53,7 @@ export const Connections = () => {
     >
       <Box>
         <Text as="h2" fontSize="22px" fontWeight="500" mb="1rem" color='gray.400'>
-          Ola,  Me chamo 
+          Olá,  Me chamo 
         </Text>
         <Text as="h1" fontSize="35px" fontWeight='500' color='blue.200' mb="1rem">
            Hudson Felix :)

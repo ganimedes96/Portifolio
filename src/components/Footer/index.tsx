@@ -33,15 +33,16 @@ export const Footer = () =>{
             
         >
             
-              <Box>
+              <Flex align='center' justify='center' gap='.4rem'>
               <Text 
-                    as='h2'
+                    as='h3'
                     fontSize='20px'
                     fontWeight='500'
                     color='gray.300'
                     
-                >Made by Hudson Felix</Text>
-              </Box>
+                >Made by </Text>
+                <Text  as='h3'  fontSize='20px'fontWeight='500'  color='blue.300'>Hudson Flex</Text>
+              </Flex>
                
            <Box mb='.3rem'>
            <Lottie
