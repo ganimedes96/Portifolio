@@ -41,7 +41,7 @@ export const Footer = () =>{
                     color='gray.300'
                     
                 >Made by </Text>
-                <Text  as='h3'  fontSize='20px'fontWeight='500'  color='blue.300'>Hudson Flex</Text>
+                <Text  as='h3'  fontSize='20px'fontWeight='500'  color='blue.300'>Hudson Felix</Text>
               </Flex>
                
            <Box mb='.3rem'>
