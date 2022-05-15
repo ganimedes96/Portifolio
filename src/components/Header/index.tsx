@@ -4,7 +4,7 @@ import Lottie from 'react-lottie';
 import snake from '../animations/snake.json'
 import { NavigationMenu } from './NavMenu';
 
-
+import { AnimationFlex, flexContainer,itemAnimation } from '../../styles/animation';
 
 export const Header = ()=> {
     
@@ -19,7 +19,10 @@ export const Header = ()=> {
     
     return(
         <>
-        <Flex 
+        <AnimationFlex
+            variants={itemAnimation}
+            initial='hidden'
+            animate='visible'  
             as='header'
             mx='auto'
             maxWidth='1200px'
@@ -42,7 +45,7 @@ export const Header = ()=> {
         <NavigationMenu/>
 
            
-        </Flex>
+        </AnimationFlex>
         <Divider />
         </>
            

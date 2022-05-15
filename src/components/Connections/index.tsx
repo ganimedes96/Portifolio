@@ -23,8 +23,8 @@ import {
 } from "react-icons/ri";
 import astrolottie from '../animations/astrolottie.json'
 import Lottie from 'react-lottie';
-import Link from "next/link";
 
+import {AnimationFlex,AnimationBox, animationReverseX,animationX, flexContainer,itemAnimation} from '../../styles/animation'
 
 
 export const Connections = () => {
@@ -45,13 +45,20 @@ export const Connections = () => {
 }
 
   return (
-    <Flex
+    <AnimationFlex
+      initial='hidden'
+      animate='visible'
+      variants={flexContainer}
       mt="10rem"
       align="center"
       justify="space-between"
       
     >
-      <Box>
+      <AnimationBox
+        initial='hidden'
+        animate='visible'
+        variants={animationReverseX}
+      >
         <Text as="h2" fontSize="22px" fontWeight="500" mb="1rem" color='gray.400'>
           Olá,  Me chamo 
         </Text>
@@ -209,8 +216,12 @@ export const Connections = () => {
             </ModalContent>
           </Modal>
         </Flex>
-      </Box>
-      <Box>
+      </AnimationBox>
+      <AnimationBox
+        initial='hidden'
+        animate='visible'
+        variants={animationX}
+      >
         {isWide &&(
 
         <Lottie
@@ -219,7 +230,7 @@ export const Connections = () => {
                   width='250px'
               />
         )}
-      </Box>
-    </Flex>
+      </AnimationBox>
+    </AnimationFlex>
   );
 };

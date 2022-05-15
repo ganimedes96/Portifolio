@@ -1,9 +1,13 @@
 import { Flex, Link, ListItem, UnorderedList } from "@chakra-ui/react"
 import { ActiveLink } from '../ActiveLink'
 
+
+
 export const Menu = () =>{
     return(
-        <Flex 
+        <Flex
+                    
+
             as='nav'
             >
                <UnorderedList
@@ -15,6 +19,7 @@ export const Menu = () =>{
                 cursor='pointer'
                 mt={{base:'3rem', md:'0'}}
                >
+                  
                    <ListItem>
                        <ActiveLink href='/about' passHref>
                               <Link>Sobre mim</Link>  
@@ -30,6 +35,7 @@ export const Menu = () =>{
                               <Link>Tecnologias</Link>  
                        </ActiveLink>
                        </ListItem>
+                   
                    
                </UnorderedList>
             </Flex> 

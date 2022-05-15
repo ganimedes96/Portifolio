@@ -19,7 +19,8 @@ const repositories= {
         'Great-Code',
         'Dashgo',
         'Ig_news',
-        'PH-Store'
+        'PH-Store',
+        'PizzaFast'
 
     ]
 }
