@@ -4,7 +4,7 @@ import Lottie from 'react-lottie';
 import snake from '../animations/snake.json'
 import { NavigationMenu } from './NavMenu';
 
-import { AnimationFlex, flexContainer,itemAnimation } from '../../styles/animation';
+import { AnimationFlex,itemAnimation } from '../../styles/animation';
 
 export const Header = ()=> {
     

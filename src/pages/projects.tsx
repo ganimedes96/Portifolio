@@ -7,6 +7,7 @@ import {useState } from "react";
 import {ModalProject} from '../components/ProjectModal'
 import Head from "next/head";
 
+import { motion } from "framer-motion";
 
 const repositories= {
     myProjects: [
@@ -103,14 +104,22 @@ export default function Projects ({projects}: projectsProps){
                      }}
                      gap='5'
                     >
-                      {projects.myProjects?.map(project =>(
-                          <GridItem key={project.id}>
+                      {projects.myProjects?.map((project,i) =>(
+                          <motion.div 
+                            key={project.id}
+                            initial={{
+                                    opacity:0, 
+                                    translateX:i % 2 === 0 ? 50 : -50, 
+                                    translateY:50}}
+                            animate={{opacity:1, translateX:0, translateY:0}}
+                            transition={{duration:0.3, delay: i*0.2}}
+                          >
                               <CardsProjects 
                               
                               handleOpenModal={() => handleOpenModal(project)} 
                               project={project}
                               />
-                          </GridItem>
+                          </motion.div>
                       ))}  
  
                     </Grid>

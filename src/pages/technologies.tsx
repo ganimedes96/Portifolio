@@ -1,6 +1,6 @@
 import { Box, Flex, Grid, GridItem, Heading, Tooltip, Image } from "@chakra-ui/react";
 import Head from "next/head";
-
+import { motion } from "framer-motion";
 
 export default function technologies (){
     
@@ -96,8 +96,16 @@ export default function technologies (){
                         templateColumns='repeat(auto-fit, minmax(150px, 1fr))'
 
                     >
-                        {technologies.map(tech =>(
-                            <GridItem key={tech.name}>
+                        {technologies.map((tech,i) =>(
+                            <motion.div 
+                            
+                            initial={{
+                                    opacity:0, 
+                                    translateX:i % 2 === 0 ? 50 : -50, 
+                                    translateY:50}}
+                            animate={{opacity:1, translateX:0, translateY:0}}
+                            transition={{duration:0.3, delay: i*0.1}}
+                            key={tech.name}>
                                 <Flex align='center' justify='center' boxSize='150px'>
                                     <Tooltip
                                         hasArrow
@@ -110,7 +118,7 @@ export default function technologies (){
                                     </Tooltip>
                                 </Flex>
 
-                            </GridItem>
+                            </motion.div>
                         ))}
 
                     </Grid>

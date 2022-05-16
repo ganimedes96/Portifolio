@@ -6,7 +6,9 @@ import {
     RiLinkedinBoxFill,
     RiDiscordFill,
   } from "react-icons/ri";
-import Link from 'next/link'
+
+import { AnimationText, animationReverseX,animationX ,itemAnimation} from "../styles/animation";
+
 
 export default function About () {
 
@@ -16,13 +18,18 @@ export default function About () {
             <title>Portfólio | Sobre mim</title>
         </Head>
         <Box 
+            
+            
             as='main'
             maxW='1300'
             mx='auto'
             p={{base:'5rem 2rem', md:'10rem 5rem'}}
 
             >
-                <Text 
+                <AnimationText
+                     variants={itemAnimation}
+                     initial='hidden'
+                     animate='visible'
                     as='h1'
                     fontSize='27px'
                     color='gray.400'
@@ -34,8 +41,11 @@ export default function About () {
                     >
 
                         Sobre mim
-                </Text>
-                <Text 
+                </AnimationText>
+                <AnimationText 
+                  variants={animationX}
+                  initial='hidden'
+                  animate='visible'
                     as='p'
                     fontSize='20px'
                     color='gray.400'
@@ -46,8 +56,11 @@ export default function About () {
                     >
                 Olá, me chamo Hudson Felix, sou estudante de desenvolvimento Web com foco em FrontEnd.
                 Estou em busca da minha primeira oportunidade como desenvolvedor, atualmente faço faculdade de ciência da computação e curso de desenvolvimento web pela trybe.
-                </Text>
-                <Text 
+                </AnimationText>
+                <AnimationText 
+                  variants={animationReverseX}
+                  initial='hidden'
+                  animate='visible'
                     as='p'
                     fontSize='20px'
                     color='gray.400'
@@ -59,7 +72,7 @@ export default function About () {
                     Meus primeiros passos com programação foram na unity com C# em 2012, em 2020 por meio de alguns amigos da faculdade eu comecei a estudar javascript
                     e assim entrei no mundo da programação em busca de novos conhecimentos e de tentar tornar a vida das pessoas mais simples através da tecnologia. 
 
-                </Text>
+                </AnimationText>
                 <Flex
                     justifyContent="center"
                     alignItems="center"

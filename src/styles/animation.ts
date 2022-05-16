@@ -1,6 +1,6 @@
-import {motion} from 'framer-motion'
+import { motion} from 'framer-motion'
 
-import {Flex,FlexProps,Box,BoxProps}from'@chakra-ui/react'
+import {Flex,FlexProps,Box,BoxProps, TextProps, Text}from'@chakra-ui/react'
 
 export const flexContainer = {
     hidden:{ opacity:0, scale:1},
@@ -53,6 +53,14 @@ export const animationX = {
         }
 }
 
+export const AnimateCard = {
+    initial:{opacity:0, translateX:-50, translateY:-50 },
+    animate:{opacity:1, translateX:0, translateY:0},
+    transition:{duration:0.3, delay: 0.3, delayChildren:2,
+        staggerChildren: 1}
+    
+}
 
 export const AnimationFlex = motion<FlexProps>(Flex)
 export const AnimationBox = motion<BoxProps>(Box)
+export const AnimationText = motion<TextProps>(Text)
