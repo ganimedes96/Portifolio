@@ -1,4 +1,4 @@
-import {Box,Flex,GridItem,useDisclosure, Grid,Text } from "@chakra-ui/react";
+import {Box,Flex,useDisclosure, Grid,Text } from "@chakra-ui/react";
 import {v4} from 'uuid'
 import {GetStaticProps } from 'next'
 import {CardsProjects} from '../components/CardsProjects'
@@ -21,7 +21,8 @@ const repositories= {
         'Dashgo',
         'Ig_news',
         'PH-Store',
-        'PizzaFast'
+        'PizzaFast',
+        'nlw-impulse-web'
 
     ]
 }

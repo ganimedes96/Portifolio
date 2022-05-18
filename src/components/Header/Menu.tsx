@@ -5,9 +5,7 @@ import { ActiveLink } from '../ActiveLink'
 
 export const Menu = () =>{
     return(
-        <Flex
-                    
-
+        <Flex        
             as='nav'
             >
                <UnorderedList
