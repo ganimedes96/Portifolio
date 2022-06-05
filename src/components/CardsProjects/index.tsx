@@ -1,4 +1,6 @@
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import {TextService}from'../../service/TextService'
+
 
 type Project = {
   images: string[]
@@ -12,7 +14,8 @@ interface Props {
 }
 
 export const CardsProjects = ({project, handleOpenModal}:Props) => {
-  
+
+  const maximumTextSize = 60;
   
   return (
   
@@ -43,7 +46,7 @@ export const CardsProjects = ({project, handleOpenModal}:Props) => {
            {project?.name}
           </Text>
           <Text as="p" color="gray.300" fontSize="16px">
-            {project?.short_description}
+            {TextService.limitText(project?.short_description, maximumTextSize) }
           </Text>
         </Box>
     
