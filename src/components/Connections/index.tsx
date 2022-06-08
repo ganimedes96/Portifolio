@@ -21,7 +21,7 @@ import {
   RiDiscordFill,
   RiGitBranchLine
 } from "react-icons/ri";
-import astrolottie from '../animations/astrolottie.json'
+import computer from '../animations/computer.json'
 import Lottie from 'react-lottie';
 
 import {AnimationFlex,AnimationBox, animationReverseX,animationX, flexContainer,itemAnimation} from '../../styles/animation'
@@ -35,10 +35,10 @@ export const Connections = () => {
    md: true
  })
 
-  const astrolottieAnimate= {
+  const computerAnimate= {
     loop: true,
     autoplay: true,
-    animationData: astrolottie,
+    animationData: computer,
     rendererSettings:{
         preserveAspectRatio: 'xMidYMid slice'
     }
@@ -225,9 +225,9 @@ export const Connections = () => {
         {isWide &&(
 
         <Lottie
-                  options={astrolottieAnimate}
-                  height='250px'
-                  width='250px'
+                  options={computerAnimate}
+                  height='300px'
+                  width='300px'
               />
         )}
       </AnimationBox>
