@@ -6,7 +6,7 @@ export default function technologies (){
     
     const technologies = [
         {
-            name: 'Java.js',
+            name: 'JavaScript',
             image:'/image/js.png'
         },
         {
@@ -30,7 +30,7 @@ export default function technologies (){
             image:'/image/mysql.png'
         },
         {
-            name:'Next',
+            name:'NextJs',
             image:'/image/next-js.svg'
         },
         {
@@ -46,7 +46,7 @@ export default function technologies (){
             image:'/image/sass.png'
         },
         {
-            name:'typeScript',
+            name:'TypeScript',
             image:'/image/typescript.svg'
         },
         {

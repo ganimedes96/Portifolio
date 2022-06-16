@@ -1,4 +1,4 @@
-import { Box, Flex, ListItem, UnorderedList,Divider, Menu} from '@chakra-ui/react';
+import { Box, Divider} from '@chakra-ui/react';
 import Link  from 'next/link';
 import Lottie from 'react-lottie';
 import snake from '../animations/snake.json'

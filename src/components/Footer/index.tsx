@@ -1,13 +1,6 @@
 import { Box, Flex,Text,Icon } from "@chakra-ui/react"
-import {
-    RiGithubFill,
-    RiWhatsappFill,
-    RiLinkedinBoxFill,
-    RiDiscordFill,
-    RiGitBranchLine
-  } from "react-icons/ri";
-  import cat from '../animations/cat.json'
-  import Lottie from 'react-lottie';
+import cat from '../animations/cat.json'
+import Lottie from 'react-lottie';
 
 export const Footer = () =>{
     
