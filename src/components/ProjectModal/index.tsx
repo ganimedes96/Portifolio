@@ -1,7 +1,6 @@
 import {
     Badge,
     Flex,
-    Heading,
     Image,
     Modal,
     ModalBody,

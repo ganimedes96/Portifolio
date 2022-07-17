@@ -11,6 +11,7 @@ import { motion } from "framer-motion";
 
 const repositories = {
   myProjects: [
+    "TodoList",
     "dtmoney",
     "Ecoleta",
     "Web-App-Happy",
@@ -119,14 +120,12 @@ export const getStaticProps: GetStaticProps<projectsProps> = async () => {
   const repo_projects: Project[] = [];
 
   for await (const repository of repositories.myProjects) {
-   
-
     try {
       const response = await api.get(
         `https://raw.githubusercontent.com/ganimedes96/${repository}/main/project-description.json`
       );
 
-    let  projectInfo = response.data;
+      let projectInfo = response.data;
 
       repo_projects.push({
         id: v4(),
