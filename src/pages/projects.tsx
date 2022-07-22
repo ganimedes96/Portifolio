@@ -11,10 +11,10 @@ import { motion } from "framer-motion";
 
 const repositories = {
   myProjects: [
+    "RocketHelp",
     "TodoList",
     "dtmoney",
     "Ecoleta",
-    "Web-App-Happy",
     "Doom-Fire-Effect",
     "RocketQ",
     "TYPING",
