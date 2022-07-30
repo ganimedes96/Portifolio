@@ -23,7 +23,8 @@ const styles = {
     global: {
         body: {
             bg:'blue.900',
-            color:'gray.100'
+            color:'gray.100',
+            
         }
     }
 }
