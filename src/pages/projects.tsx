@@ -13,7 +13,7 @@ const repositories = {
   myProjects: [
     "RocketHelp",
     "TodoList",
-    "dtmoney",
+    "DT-Money",
     "Ecoleta",
     "Doom-Fire-Effect",
     "RocketQ",

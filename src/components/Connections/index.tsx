@@ -23,6 +23,7 @@ import {
 } from "react-icons/ri";
 import computer from '../animations/computer.json'
 import Lottie from 'react-lottie';
+import Typewriter from 'typewriter-effect'
 
 import {AnimationFlex,AnimationBox, animationReverseX,animationX, flexContainer,itemAnimation} from '../../styles/animation'
 
@@ -60,7 +61,14 @@ export const Connections = () => {
         variants={animationReverseX}
       >
         <Text as="h2" fontSize="22px" fontWeight="500" mb="1rem" color='gray.400'>
-          Olá,  Me chamo 
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter
+                .typeString("Olá, Me chamo")
+                .start()
+
+            }}
+          />
         </Text>
         <Text as="h1" fontSize="35px" fontWeight='500' color='blue.200' mb="1rem">
            Hudson Felix :)
