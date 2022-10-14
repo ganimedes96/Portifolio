@@ -43,7 +43,7 @@ interface Project {
   link_preview?: string;
   link_repo: string;
 }
-
+//
 interface projectsProps {
   projects: {
     myProjects: Project[];
