@@ -74,7 +74,7 @@ export const Connections = () => {
            Hudson Felix :)
         </Text>
         <Text as="a" color="gray.500" fontSize="20px">
-          Developer Front-End
+          Developer Full-Stack
         </Text>
         <Flex 
           gap={{base:"1rem", md:"2rem"}} 
