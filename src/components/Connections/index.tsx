@@ -86,7 +86,7 @@ export const Connections = () => {
             as="a"
             cursor="pointer"
             bg="blue.400"
-            href='https://drive.google.com/file/d/1RxuFqs1g66vALosKePhI1jI_1ZCaLCeP/view?usp=sharing'
+            href='https://drive.google.com/file/d/1kiOwzrFa6UfRQIfSRmgAkD5r-aF2Xg8r/view?usp=share_link'
             target='_blank'
             justifyContent="center"
             alignItems="center"
